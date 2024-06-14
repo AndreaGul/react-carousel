@@ -10,13 +10,13 @@ function App() {
 
   const [ currVisible, setCurrVisible ] = useState(0);
  
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrVisible((c) => (c + 1 >= posts.length ? 0 : c + 1));
-  //   }, 3000);
+  useEffect(() => {
+  const interval = setInterval(() => {
+       setCurrVisible((c) => (c + 1 >= posts.length ? 0 : c + 1));
+     }, 3000);
 
-  //   return () => clearInterval(interval);
-  // }, [posts.length]);
+     return () => clearInterval(interval);
+   }, [posts.length]);
   
 
   return (
