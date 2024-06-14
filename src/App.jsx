@@ -1,10 +1,20 @@
 import Carosel from "./components/Carosel";
 import posts from "../posts"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Bullets from "./components/Bullets";
 function App() {
 
   const [ currVisible, setCurrVisible ] = useState(0);
+ 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrVisible((c) => (c + 1 >= posts.length ? 0 : c + 1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [posts.length]);
+  
+
   return (
     
     
