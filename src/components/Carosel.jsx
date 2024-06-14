@@ -5,7 +5,7 @@ export default function ({title,image,isVisible}) {
         <>
         <div className={caroselCss.container} style={{display: isVisible ? 'block' : 'none'}}>
             <img src={image} alt="Nessun immagine trovata" />
-            <h2>{title}</h2>
+            <h2 className={caroselCss.titolo}>{title}</h2>
         </div>
         
         </>

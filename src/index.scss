@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.carosel-container{
+    text-align: center;
+}
+
+button{
+    all: unset;
+    margin: 0 20px;
+    font-size: 35px;
+    color: #818196;
+}
+
+.bullets{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+
+    .bullet{
+        margin: 0 3px;
+        color: #818196;
+    }
+}
