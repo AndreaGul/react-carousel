@@ -8,8 +8,8 @@ function App() {
     
     
     <> 
-    <button onClick={()=>setCurrVisible(c => c-1)}>indietro</button>
-    <button onClick={()=>setCurrVisible(c => c+1)}>avanti</button>
+    <button onClick={()=>setCurrVisible(c => c === 0 ? c=posts.length-1 : c-1)}>indietro</button>
+    <button onClick={()=>setCurrVisible(c => posts.length-1 === c ? c=0 : c+1)}>avanti</button>
   
     {posts.map((p)=>(
        <Carosel
