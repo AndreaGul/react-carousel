@@ -7,7 +7,7 @@ export default function ({title,image,isVisible}) {
             <img src={image} alt="Nessun immagine trovata" />
             <h2>{title}</h2>
         </div>
-       
+        
         </>
     )
 }
